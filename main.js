@@ -1,30 +1,30 @@
 function parking(){
     let vehicle =document.getElementById("uwow").value;
     let timeDuration = parseInt(document.getElementById("ngasal").value);
-    let defaultPriceCar = 10000;
-    let nextPriceCar = 5000;
-    let defaultPricebike = 5000;
-    let nextPricebike = 2500;
+    let defaultPriceMobil = 10000;
+    let nextPriceMobil = 5000;
+    let defaultPriceMotor = 5000;
+    let nextPriceMotor = 2500;
     console.log(timeDuration)
-    if (vehicle === "car") {
+    if (vehicle === "mobil") {
         
         if (timeDuration <= 2) {
-            alert(`biaya dari parkir mobil anda adalah ${defaultPriceCar}`);
+            alert(`biaya dari parkir Mobil anda adalah ${defaultPriceMobil}`);
         } else{
             let additionalTime = timeDuration -2;
-            let additionalprice = nextPriceCar * additionalTime;
-            let fixPrice = defaultPriceCar + additionalprice;
-            alert(`biaya dari parkir mobil anda adalah ${fixPrice}`);
+            let additionalprice = nextPriceMobil * additionalTime;
+            let fixPrice = defaultPriceMobil + additionalprice;
+            alert(`biaya dari parkir Mobil anda adalah ${fixPrice}`);
         }
-    } else if (vehicle === "bike"){
+    } else if (vehicle === "motor"){
         
         if(timeDuration <= 2) {
-            alert(`biaya dari parkir motor anda adalah ${defaultPricebike}`);
+            alert(`biaya dari parkir Motor anda adalah ${defaultPriceMotor}`);
         } else {
             let additionalTime = timeDuration - 2;
-            let additionalprice = nextPricebike * additionalTime;
-            let fixPrice = defaultPricebike + additionalprice;
-            alert(`biaya dari parkir motor anda adalah ${fixPrice}`);
+            let additionalprice = nextPriceMotor * additionalTime;
+            let fixPrice = defaultPriceMotor + additionalprice;
+            alert(`biaya dari parkir Motor anda adalah ${fixPrice}`);
         }
     } 
 }
